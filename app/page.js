@@ -37,8 +37,55 @@ export default function Home() {
         </div>
       </div>
 
-      <section className='min-h-screen'>
+      <section className='pb-20 pt-2'>
+        <div className='container mx-auto text-center'>
+          <h3 className='sd:text-5xl xz:text-3xl'>
+            Цена создания сайта
+          </h3>
 
+
+          <p className='mt-6 sd:text-base xz:text-sm text-gray-600 font-light sd:block xz:hidden'>
+            Создание сайта зависит от нескольких ключевых факторов, включая количество страниц, тип товаров или услуг, а также требования к дизайну и функционалу. От правильного планирования и разработки контента до оптимизации для поисковых систем – каждый этап играет важную роль в создании уникального и эффективного веб-проекта.
+          </p>
+
+
+          <div className="overflow-x-auto mt-10">
+            <table className="table">
+              <thead className="bg-slate-200">
+                <tr>
+                  <th>Наименование</th>
+                  <th>Стоимость</th>
+                  <th>Сроки</th>
+                  <th className="sd:block xz:hidden">Назначение</th>
+                </tr>
+              </thead>
+              <tbody className="sd:text-base xz:text-xs">
+                <tr>
+
+                  <td>Одностраничный сайт (лендинг)</td>
+                  <td>от 350 руб.</td>
+                  <td>3-5 дней</td>
+                  <td className="sd:block xz:hidden">услуги/товар</td>
+                </tr>
+                <tr>
+                  <td>Многостраничный сайт</td>
+                  <td>от 599 руб.</td>
+                  <td>от 5 дней</td>
+                  <td className="sd:block xz:hidden">услуги/товар</td>
+                </tr>
+                <tr>
+                  <td>Интернет-магазин</td>
+                  <td>от 1499 руб.</td>
+                  <td>от 7 дней</td>
+                  <td className="sd:block xz:hidden">товар</td>
+                </tr>
+              </tbody>
+            </table>
+
+
+          </div>
+
+        </div>
       </section>
     </main>
   );

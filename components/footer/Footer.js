@@ -10,7 +10,7 @@ const Footer = () => {
 				</div>
 
 				<aside className='pt-8 sd:pl-12 xz:pl-5 sd:pb-0 xz:pb-10'>
-					<h4 className='font-bold text-5xl'>
+					<h4 className='font-semibold text-5xl'>
 						Контакты
 					</h4>
 					<div className='sd:text-2xl xz:text-xl mt-8'>

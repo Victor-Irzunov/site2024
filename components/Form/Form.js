@@ -8,13 +8,13 @@ const FormOrder = ({ selectedProduct, closeModal, setIsFormSubmitted, title, btn
 
 	const handleSubmit = (e) => {
 		e.preventDefault();
-		let messageForm = `<b>Заказ с сайта Бавария:</b>\n`
+		let messageForm = `<b>Mой мини сайт:</b>\n`
 		messageForm += `<b> </b>\n`
-		messageForm += `<b>Клиента интересует: ${selectedProduct} </b>\n`
+		messageForm += `<b>Клиента интересует: ${selectedProduct || ''} </b>\n`
 		messageForm += `<b> </b>\n`
 		messageForm += `<b>Телефон:</b> ${formData.phone}\n`
 		messageForm += `<b> </b>\n`
-		messageForm += `<b>Сообщение: ${formData.message} </b>\n`
+		messageForm += `<b>Сообщение: ${formData.message || ''} </b>\n`
 
 		sendOrderTelegram(messageForm)
 			.then(data => {
