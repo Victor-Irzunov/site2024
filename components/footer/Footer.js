@@ -72,9 +72,9 @@ const Footer = () => {
 
 			</div>
 
-			<aside className="sd:pt-2 xz:pt-0 pb-2">
+			<aside className="pt-3 pb-3">
 				<div className='container mx-auto text-center'>
-					<p className='text-gray-800 xs:text-sm xz:text-xs font-light' >
+					<p className='text-gray-600 xs:text-sm xz:text-xs font-light' >
 						Copyright © 2024 | Перейти на основной сайт
 						<a href='https://vi-tech.by' target='_blank' rel="noreferrer" className='text-sky-700 underline'> VI:TECH</a>.
 						{' '}Информация на сайте не является публичной офертой и предоставляется исключительно в информационных целях.

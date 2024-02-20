@@ -34,7 +34,7 @@ const FormOrder = ({ selectedProduct, closeModal, setIsFormSubmitted, title, btn
 	};
 
 	return (
-		<div className={`w-full sd:px-12 ${title ? 'xz:px-5': 'xz:px-2'} sd:py-4 xz:py-5`}>
+		<div className={`w-full sd:px-12 ${title ? 'xz:px-5' : 'xz:px-2'} sd:py-4 xz:py-5`}>
 			<p className='text-black uppercase font-bold text-center mb-5 text-xl'>
 				{
 					title ? 'Напишите нам' : null
@@ -71,7 +71,7 @@ const FormOrder = ({ selectedProduct, closeModal, setIsFormSubmitted, title, btn
 					></textarea>
 				</div>
 				<div className="form-control mt-6">
-					<button className="btn btn-primary font-bold" type="submit">
+					<button className="btn btn-primary text-white font-bold" type="submit">
 						{btn}
 					</button>
 				</div>

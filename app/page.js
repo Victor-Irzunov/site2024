@@ -1,6 +1,17 @@
+"use client"
+import Modal from "@/components/modal/Modal";
 import Image from "next/image";
-
+import { useState } from "react";
 export default function Home() {
+  const [selectedProduct, setSelectedProduct] = useState(null);
+  const [isFormSubmitted, setIsFormSubmitted] = useState(false);
+  const handleOrderClick = (product) => {
+    setSelectedProduct(product);
+    document.getElementById("my_modal_3").showModal();
+  };
+  const closeModal = () => {
+    document.getElementById("my_modal_3").close();
+  };
   return (
     <main className="overflow-hidden max-w-full">
       <div className='relative min-h-screen'>
@@ -19,7 +30,10 @@ export default function Home() {
                 </p>
               </div>
 
-              <button className="btn btn-primary sd:btn-md xz:btn-sm rounded-none text-white mt-8 uppercase">
+              <button
+                className="btn btn-primary sd:btn-md xz:btn-sm rounded-none text-white mt-8 uppercase"
+                onClick={() => handleOrderClick('Получить консультацию')}
+              >
                 Получить консультацию
               </button>
             </div>
@@ -36,57 +50,120 @@ export default function Home() {
           </section>
         </div>
       </div>
-
-      <section className='pb-20 pt-2'>
+      <section className='xz:pb-20 sd:pb-28 pt-10 bg-primary'>
         <div className='container mx-auto text-center'>
-          <h3 className='sd:text-5xl xz:text-3xl'>
+          <h3 className='sd:text-5xl xz:text-3xl uppercase text-white/90'>
             Цена создания сайта
           </h3>
-
-
-          <p className='mt-6 sd:text-base xz:text-sm text-gray-600 font-light sd:block xz:hidden'>
+          <p className='mt-6 sd:text-base xz:text-sm text-white/75 font-light sd:block xz:hidden'>
             Создание сайта зависит от нескольких ключевых факторов, включая количество страниц, тип товаров или услуг, а также требования к дизайну и функционалу. От правильного планирования и разработки контента до оптимизации для поисковых систем – каждый этап играет важную роль в создании уникального и эффективного веб-проекта.
           </p>
-
-
-          <div className="overflow-x-auto mt-10">
-            <table className="table">
-              <thead className="bg-slate-200">
-                <tr>
-                  <th>Наименование</th>
-                  <th>Стоимость</th>
-                  <th>Сроки</th>
-                  <th className="sd:block xz:hidden">Назначение</th>
-                </tr>
-              </thead>
-              <tbody className="sd:text-base xz:text-xs">
-                <tr>
-
-                  <td>Одностраничный сайт (лендинг)</td>
-                  <td>от 350 руб.</td>
-                  <td>3-5 дней</td>
-                  <td className="sd:block xz:hidden">услуги/товар</td>
-                </tr>
-                <tr>
-                  <td>Многостраничный сайт</td>
-                  <td>от 599 руб.</td>
-                  <td>от 5 дней</td>
-                  <td className="sd:block xz:hidden">услуги/товар</td>
-                </tr>
-                <tr>
-                  <td>Интернет-магазин</td>
-                  <td>от 1499 руб.</td>
-                  <td>от 7 дней</td>
-                  <td className="sd:block xz:hidden">товар</td>
-                </tr>
-              </tbody>
-            </table>
-
-
+          <div className='bg-white flex sd:flex-row xz:flex-col py-10 sd:mt-5 xz:mt-10 justify-evenly'>
+            <div className=''>
+              <div className='border-b border-primary h-32'>
+                <div className='px-4'>
+                  <h4 className='uppercase font-semibold text-gray-600'>
+                    Одностраничный сайт
+                  </h4>
+                  <p className='font-bold mt-7 sd:text-6xl xz:text-5xl text-primary'>
+                    <span className="">от</span>  350 BYN
+                  </p>
+                </div>
+              </div>
+              <ul className='mt-4 text-black'>
+                <li className='mb-2'>
+                  <span className="font-semibold">Срок создания </span>
+                  <span className="block text-gray-600">
+                    3-5 дней
+                  </span>
+                </li>
+                <li className='mb-2'>
+                  <span className="font-semibold">Назначение </span>
+                  <span className="block text-gray-600">
+                    услуги / товары
+                  </span>
+                </li>
+              </ul>
+              <button
+                className="btn btn-primary text-white rounded-none mt-8 text-xl px-8"
+                onClick={() => handleOrderClick('Заказать: Одностраничный сайт')}
+              >
+                Заказать
+              </button>
+            </div>
+            <div className='sd:mt-0 xz:mt-20'>
+              <div className='border-b border-primary h-32'>
+                <div className='px-4'>
+                  <h4 className='uppercase font-semibold text-gray-600'>
+                    Многостраничный сайт
+                  </h4>
+                  <p className='font-bold mt-7 sd:text-6xl xz:text-5xl text-primary'>
+                    <span className="">от</span>  599 BYN
+                  </p>
+                </div>
+              </div>
+              <ul className='mt-4 text-black'>
+                <li className='mb-2'>
+                  <span className="font-semibold">Срок создания </span>
+                  <span className="block text-gray-600">
+                    от 5 дней
+                  </span>
+                </li>
+                <li className='mb-2'>
+                  <span className="font-semibold">Назначение </span>
+                  <span className="block text-gray-600">
+                    услуги / товары
+                  </span>
+                </li>
+              </ul>
+              <button
+                className="btn btn-primary text-white rounded-none mt-8 text-xl px-8"
+                onClick={() => handleOrderClick('Заказать: Многостраничный сайт')}
+              >
+                Заказать
+              </button>
+            </div>
+            <div className='sd:mt-0 xz:mt-20'>
+              <div className='border-b border-primary h-32'>
+                <div className='px-4'>
+                  <h4 className='uppercase font-semibold text-gray-600'>
+                    Интернет-магазин
+                  </h4>
+                  <p className='font-bold mt-7 sd:text-6xl xz:text-5xl text-primary'>
+                    <span className="">от</span>  1499 BYN
+                  </p>
+                </div>
+              </div>
+              <ul className='mt-4 text-black'>
+                <li className='mb-2'>
+                  <span className="font-semibold">Срок создания </span>
+                  <span className="block text-gray-600">
+                    от 7 дней
+                  </span>
+                </li>
+                <li className='mb-2'>
+                  <span className="font-semibold">Назначение </span>
+                  <span className="block text-gray-600">
+                    товары
+                  </span>
+                </li>
+              </ul>
+              <button
+                className="btn btn-primary text-white rounded-none mt-8 text-xl px-8"
+                onClick={() => handleOrderClick('Заказать: Интернет-магазин')}
+              >
+                Заказать
+              </button>
+            </div>
           </div>
-
         </div>
       </section>
+      <Modal
+        selectedProduct={selectedProduct}
+        closeModal={closeModal}
+        isFormSubmitted={isFormSubmitted}
+        setIsFormSubmitted={setIsFormSubmitted}
+      />
     </main>
   );
-}
+};

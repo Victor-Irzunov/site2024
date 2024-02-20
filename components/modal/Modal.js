@@ -7,7 +7,7 @@ const Modal = ({ selectedProduct, closeModal, isFormSubmitted, setIsFormSubmitte
 		<dialog id="my_modal_3" className="modal">
 			{!isFormSubmitted ? (
 				<div className="modal-box text-black">
-					<h3 className="font-semibold text-lg">{selectedProduct ? `Ваш выбор: ${selectedProduct}` : 'Купить'}</h3>
+					<h3 className="font-semibold text-lg">{selectedProduct ? `${selectedProduct}` : 'Заказать'}</h3>
 					<p className="py-1 mt-3 text-sm text-gray-600">
 						Пожалуйста, заполните данные в форме и мы вам перезвоним.
 					</p>
@@ -25,7 +25,7 @@ const Modal = ({ selectedProduct, closeModal, isFormSubmitted, setIsFormSubmitte
 				:
 				(
 					<div className="modal-box">
-						<p className="text">Ваш запрос успешно отправлен!</p>
+						<p className="text-black">Ваш запрос успешно отправлен!</p>
 					</div>
 				)
 			}
