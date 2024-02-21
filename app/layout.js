@@ -14,6 +14,23 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="ru">
+
+      <head>
+        <link rel="shortcut icon" href="/favicon.ico" />
+        <meta name="google-site-verification" content="Wphm-E5wKW04SLRPjx_8RruLZSGhx_vxEprHvnYPgAE" />
+
+        <script async defer src="https://www.googletagmanager.com/gtag/js?id=AW-11166544233"></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'AW-11166544233');
+              `
+          }}
+        />
+      </head>
       <body>
         {children}
         <Footer />
