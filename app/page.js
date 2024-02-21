@@ -39,9 +39,12 @@ export default function Home() {
             </div>
 
             <div className='absolute sd:right-0 xz:-right-12 xz:-left-14 sd:left-auto z-0 sd:top-0 xz:top-10'>
-              <Image src='/svg/fon.svg' alt='Разработка сайтов - фоновое изображение'
+              <Image
+                src='/svg/fon.svg'
+                alt='Разработка сайтов - фоновое изображение'
                 width={1100} height={1100}
                 className=""
+                loading="eager"
               />
             </div>
             <div className='absolute sd:right-20 xz:right-8 z-10 sd:bottom-1/4 xz:-top-3'>
