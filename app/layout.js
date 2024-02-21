@@ -1,7 +1,6 @@
 import Footer from "@/components/footer/Footer";
 import "./globals.css";
 
-
 export const metadata = {
   title: "Создание сайтов в Минске и Беларуси",
   description: "Предоставляем профессиональные услуги по созданию сайтов в Минске и по всей Беларуси. Наша команда специалистов разработает уникальный сайт, соответствующий вашим потребностям и целям бизнеса. Мы гарантируем высокое качество работы, индивидуальный подход к каждому проекту и соблюдение сроков.",
@@ -28,6 +27,25 @@ export default function RootLayout({ children }) {
               gtag('js', new Date());
               gtag('config', 'AW-11166544233');
               `
+          }}
+        />
+        {/* Яндекс.Метрика счетчик */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+              m[i].l=1*new Date();
+              for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+              k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+              (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+              ym(96537385, "init", {
+                  clickmap:true,
+                  trackLinks:true,
+                  accurateTrackBounce:true,
+                  webvisor:true
+              });
+            `
           }}
         />
       </head>
