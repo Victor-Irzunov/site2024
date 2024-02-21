@@ -44,11 +44,16 @@ export default function Home() {
                 alt='Разработка сайтов - фоновое изображение'
                 width={1100} height={1100}
                 className=""
-                loading="eager"
+                
               />
             </div>
             <div className='absolute sd:right-20 xz:right-8 z-10 sd:bottom-1/4 xz:-top-3'>
-              <Image src='/fon/fon.webp' alt='Создание сайтов - фоновое изображение' width={650} height={650} />
+              <Image
+                src='/fon/fon.webp'
+                alt='Создание сайтов - фоновое изображение'
+                width={650} height={650}
+                loading="eager"
+              />
             </div>
           </section>
         </div>
