@@ -2,7 +2,7 @@ import Footer from "@/components/footer/Footer";
 import "./globals.css";
 
 export const metadata = {
-  title: "Создание сайтов в Минске и Беларуси",
+  title: "Создание сайтов | Разработка и продвижение",
   description: "Предоставляем профессиональные услуги по созданию сайтов в Минске и по всей Беларуси. Наша команда специалистов разработает уникальный сайт, соответствующий вашим потребностям и целям бизнеса. Мы гарантируем высокое качество работы, индивидуальный подход к каждому проекту и соблюдение сроков.",
   keywords: "создание сайтов, лендингов, одностраничных сайтов, многостраничных сайтов, Минск, Беларусь, веб-разработка, веб-дизайн, интернет-магазин, корпоративный сайт, разработка веб-приложений, под ключ",
   alternates: {
@@ -18,7 +18,7 @@ export default function RootLayout({ children }) {
         <link rel="shortcut icon" href="/favicon.ico" />
         <meta name="google-site-verification" content="Wphm-E5wKW04SLRPjx_8RruLZSGhx_vxEprHvnYPgAE" />
         <meta name="yandex-verification" content="ca1b9c01d34250d4" />
-        <script async defer src="https://www.googletagmanager.com/gtag/js?id=AW-11166544233"></script>
+        {/* <script async defer src="https://www.googletagmanager.com/gtag/js?id=AW-11166544233"></script>
         <script
           dangerouslySetInnerHTML={{
             __html: `
@@ -28,9 +28,9 @@ export default function RootLayout({ children }) {
               gtag('config', 'AW-11166544233');
               `
           }}
-        />
-        {/* Яндекс.Метрика счетчик */}
-        <script
+        /> */}
+
+        {/* <script
           dangerouslySetInnerHTML={{
             __html: `
               (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
@@ -47,7 +47,7 @@ export default function RootLayout({ children }) {
               });
             `
           }}
-        />
+        /> */}
       </head>
       <body>
         {children}
