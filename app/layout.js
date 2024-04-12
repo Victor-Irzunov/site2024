@@ -16,7 +16,7 @@ export default function RootLayout({ children }) {
 
       <head>
         <link rel="shortcut icon" href="/favicon.ico" />
-        <meta name="google-site-verification" content="Wphm-E5wKW04SLRPjx_8RruLZSGhx_vxEprHvnYPgAE" />
+        {/* <meta name="google-site-verification" content="Wphm-E5wKW04SLRPjx_8RruLZSGhx_vxEprHvnYPgAE" /> */}
         <meta name="yandex-verification" content="ca1b9c01d34250d4" />
         {/* <script async defer src="https://www.googletagmanager.com/gtag/js?id=AW-11166544233"></script>
         <script
@@ -30,7 +30,7 @@ export default function RootLayout({ children }) {
           }}
         /> */}
 
-        {/* <script
+        <script
           dangerouslySetInnerHTML={{
             __html: `
               (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
@@ -47,7 +47,7 @@ export default function RootLayout({ children }) {
               });
             `
           }}
-        /> */}
+        />
       </head>
       <body>
         {children}
