@@ -23,7 +23,7 @@ export default function RootLayout({ children }) {
       <head>
         <link rel="shortcut icon" href="/favicon.ico" />
         {/* <meta name="google-site-verification" content="Wphm-E5wKW04SLRPjx_8RruLZSGhx_vxEprHvnYPgAE" /> */}
-        <meta name="yandex-verification" content="24b75c3ca9c46b12" />
+        <meta name="yandex-verification" content="063db58910e76e4f" />
         {/* <script async defer src="https://www.googletagmanager.com/gtag/js?id=AW-11166544233"></script>
         <script
           dangerouslySetInnerHTML={{
