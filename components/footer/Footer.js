@@ -74,7 +74,7 @@ const Footer = () => {
 
 			<aside className="pt-3 pb-3">
 				<div className='container mx-auto text-center'>
-					<p className='text-gray-600 xs:text-sm xz:text-xs font-light' >
+					<p className='text-gray-600 xz:text-base sd:text-lg font-light' >
 						Copyright © 2024 | Перейти на основной сайт
 						<a href='https://vi-tech.by' target='_blank' rel="noreferrer" className='text-sky-700 underline'> VI:TECH</a>.
 						{' '}Информация на сайте не является публичной офертой и предоставляется исключительно в информационных целях.
