@@ -22,7 +22,7 @@ export default function Home() {
                 Создание сайтов
               </h1>
               <h2 className='mt-5 sd:text-3xl xz:text-xl font-light sd:pl-2 xz:pl-1'>
-                Удивительные сайты здесь
+                Профессиональные сайты здесь
               </h2>
               <div className='container mx-auto'>
                 <p className='sd:mt-10 xz:mt-6 font-light sd:pl-2 xz:pl-1 sd:text-justify xz:text-left sd:text-base xz:text-sm'>
