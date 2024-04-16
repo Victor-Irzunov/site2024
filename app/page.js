@@ -17,7 +17,7 @@ export default function Home() {
       <div className='relative min-h-screen'>
         <div className='container mx-auto'>
           <section className=''>
-            <div className='absolute z-20 sd:w-1/2 xz:max-w-full sd:top-1/2 xz:top-2/3 xm:top-full -translate-y-1/2'>
+            <div className='absolute z-20 sd:w-1/2 xz:max-w-full sd:top-1/2 xz:top-2/3 xs:top-3/4 xm:top-2/3  -translate-y-1/2'>
               <h1 className='sd:text-8xl xz:text-4xl font-bold'>
                 Создание сайтов
               </h1>
@@ -44,7 +44,7 @@ export default function Home() {
                 alt='Разработка сайтов - фоновое изображение'
                 width={1100} height={1100}
                 className=""
-                
+
               />
             </div>
             <div className='absolute sd:right-20 xz:right-8 z-10 sd:bottom-1/4 xz:-top-3'>
@@ -60,21 +60,25 @@ export default function Home() {
       </div>
       <section className='xz:pb-20 sd:pb-28 pt-10 bg-primary'>
         <div className='container mx-auto text-center'>
-          <h3 className='sd:text-5xl xz:text-3xl uppercase text-white/90'>
+          <h3 className='sd:text-5xl xz:text-3xl uppercase text-white'>
             Цена создания сайта
           </h3>
-          <p className='mt-6 sd:text-base xz:text-sm text-white/75 font-light sd:block xz:hidden'>
+          <p className='sd:mt-6 xz:mt-0 sd:text-base xz:text-sm text-white/95 font-light sd:block xz:hidden'>
             Создание сайта зависит от нескольких ключевых факторов, включая количество страниц, тип товаров или услуг, а также требования к дизайну и функционалу. От правильного планирования и разработки контента до оптимизации для поисковых систем – каждый этап играет важную роль в создании уникального и эффективного веб-проекта.
           </p>
-          <div className='bg-white flex sd:flex-row xz:flex-col py-10 sd:mt-5 xz:mt-10 justify-evenly'>
-            <div className=''>
+
+          <div className='flex sd:flex-row xz:flex-col py-10 sd:mt-5 xz:mt-0 justify-evenly'>
+            <div className='bg-white sd:p-3 xz:p-3'>
               <div className='border-b border-primary h-32'>
                 <div className='px-4'>
                   <h4 className='uppercase font-semibold text-gray-600'>
                     Одностраничный сайт
                   </h4>
-                  <p className='font-bold mt-7 sd:text-6xl xz:text-5xl text-primary'>
-                    <span className="">от</span>  350 BYN
+                  <p className='text-sm'>
+                    (сайт-визитка, лендинг)
+                  </p>
+                  <p className='font-bold mt-3 sd:text-4xl lg:text-6xl xz:text-4xl xy:text-5xl text-primary'>
+                    <span className="">от</span>  299 BYN
                   </p>
                 </div>
               </div>
@@ -99,13 +103,13 @@ export default function Home() {
                 Заказать
               </button>
             </div>
-            <div className='sd:mt-0 xz:mt-20'>
+            <div className='sd:mt-0 xz:mt-2 bg-white sd:p-3 xz:p-3'>
               <div className='border-b border-primary h-32'>
                 <div className='px-4'>
                   <h4 className='uppercase font-semibold text-gray-600'>
                     Многостраничный сайт
                   </h4>
-                  <p className='font-bold mt-7 sd:text-6xl xz:text-5xl text-primary'>
+                  <p className='font-bold mt-7 sd:text-4xl lg:text-6xl xz:text-4xl xy:text-5xl text-primary'>
                     <span className="">от</span>  599 BYN
                   </p>
                 </div>
@@ -131,13 +135,13 @@ export default function Home() {
                 Заказать
               </button>
             </div>
-            <div className='sd:mt-0 xz:mt-20'>
+            <div className='sd:mt-0 xz:mt-2 bg-white sd:p-3 xz:p-3'>
               <div className='border-b border-primary h-32'>
                 <div className='px-4'>
                   <h4 className='uppercase font-semibold text-gray-600'>
                     Интернет-магазин
                   </h4>
-                  <p className='font-bold mt-7 sd:text-6xl xz:text-5xl text-primary'>
+                  <p className='font-bold mt-7 sd:text-4xl lg:text-6xl xz:text-4xl xy:text-5xl text-primary'>
                     <span className="">от</span>  1499 BYN
                   </p>
                 </div>

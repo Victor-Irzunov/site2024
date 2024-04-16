@@ -19,7 +19,7 @@ const Footer = () => {
 								Телефон:
 							</span>{' '}
 							<a href="tel:80333511597">
-								8(033) 351-15-97
+								+375 33 351-15-97
 							</a>
 						</div>
 						<div className='mt-6'>
@@ -45,6 +45,22 @@ const Footer = () => {
 							<p className="">
 								Пн-Вс 8:00-20:00
 							</p>
+						</div>
+						<div className='mt-6'>
+							<span className="text-primary font-semibold">
+								Наш основной сайт:
+							</span>{' '}
+							<a href='https://vi-tech.by' target='_blank' rel="noreferrer" className='block'>
+								vi-tech.by
+							</a>
+						</div>
+						<div className='mt-6'>
+							<span className="text-primary font-semibold">
+								Портфолио:
+							</span>{' '}
+							<a href='https://vi-tech.by/portfolio' target='_blank' rel="noreferrer" className='block'>
+								vi-tech.by/portfolio
+							</a>
 						</div>
 						<div className='mt-6'>
 							<span className="text-primary font-semibold">
@@ -74,9 +90,8 @@ const Footer = () => {
 
 			<aside className="pt-3 pb-3">
 				<div className='container mx-auto text-center'>
-					<p className='text-gray-600 xz:text-base sd:text-lg font-light' >
-						Copyright © 2024 | Перейти на основной сайт
-						<a href='https://vi-tech.by' target='_blank' rel="noreferrer" className='text-sky-700 underline'> VI:TECH</a>.
+					<p className='text-gray-600 xz:text-xs sd:text-sm font-light' >
+						Copyright © 2024 |
 						{' '}Информация на сайте не является публичной офертой и предоставляется исключительно в информационных целях.
 					</p>
 				</div>
