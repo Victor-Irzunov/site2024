@@ -142,7 +142,7 @@ export default function Home() {
                     Интернет-магазин
                   </h4>
                   <p className='font-bold mt-7 sd:text-4xl lg:text-6xl xz:text-4xl xy:text-5xl text-primary'>
-                    <span className="">от</span>  1499 BYN
+                    <span className="">от</span>  1399 BYN
                   </p>
                 </div>
               </div>
