@@ -13,12 +13,14 @@ export default function Home() {
     document.getElementById("my_modal_3").close();
   };
   return (
-    <main className="overflow-hidden max-w-full">
+    <main className="overflow-hidden max-w-full" style={{ background: 'linear-gradient(to right, #833ab4, #fd1d1d, #fcb045)' }}>
       <div className='relative min-h-screen'>
         <div className='container mx-auto'>
-          <section className=''>
-            <div className='absolute z-20 sd:w-1/2 xz:max-w-full sd:top-1/2 xz:top-2/3 xs:top-3/4 xm:top-2/3  -translate-y-1/2'>
-              <h1 className='sd:text-8xl xz:text-4xl font-bold'>
+
+          <section className='flex sd:flex-row xz:flex-col items-center sd:justify-between xz:justify-center h-screen'>
+
+            <div className='sd:w-1/2 xz:w-full text-white'>
+              <h1 className='sd:text-7xl xz:text-4xl xx:text-5xl font-bold text-shadow'>
                 Создание сайтов
               </h1>
               <h2 className='mt-5 sd:text-3xl xz:text-xl font-light sd:pl-2 xz:pl-1'>
@@ -31,34 +33,24 @@ export default function Home() {
               </div>
 
               <button
-                className="btn btn-primary sd:btn-md xz:btn-sm rounded-none text-white mt-8 uppercase"
+                className="btn btn-primary  border-none shadow-lg sd:btn-md xz:btn-sm rounded-none text-white mt-8 uppercase"
                 onClick={() => handleOrderClick('Получить консультацию')}
               >
                 Получить консультацию
               </button>
             </div>
 
-            <div className='absolute sd:right-0 xz:-right-12 xz:-left-14 sd:left-auto z-0 sd:top-0 xz:top-10'>
-              <Image
-                src='/svg/fon.svg'
-                alt='Разработка сайтов - фоновое изображение'
-                width={1100} height={1100}
-                className=""
+            <div className='sd:w-1/2 xz:w-full flex justify-center items-center overflow-hidden sd:mt-0 xz:mt-10'>
+              <img className="mask mask-circle shadow-xl" src="/fon/fon6.webp"
+                // style={{ borderRadius: '56% 44% 70% 30% / 45% 58% 42% 55%' }}
+                alt="фоновое изображение - создание сайтов"
+              />
+            </div>
 
-              />
-            </div>
-            <div className='absolute sd:right-20 xz:right-8 z-10 sd:bottom-1/4 xz:-top-3'>
-              <Image
-                src='/fon/fon.webp'
-                alt='Создание сайтов - фоновое изображение'
-                width={650} height={650}
-                loading="eager"
-              />
-            </div>
           </section>
         </div>
       </div>
-      <section className='xz:pb-20 sd:pb-28 pt-10 bg-primary'>
+      <section className='xz:pb-6 sd:pb-28 pt-10 bg-primary'>
         <div className='container mx-auto text-center'>
           <h3 className='sd:text-5xl xz:text-3xl uppercase text-white'>
             Цена создания сайта
@@ -74,7 +66,7 @@ export default function Home() {
                   <h4 className='uppercase font-semibold text-gray-600'>
                     Одностраничный сайт
                   </h4>
-                  <p className='text-sm'>
+                  <p className='text-sm text-gray-500'>
                     (сайт-визитка, лендинг)
                   </p>
                   <p className='font-bold mt-3 sd:text-4xl lg:text-6xl xz:text-4xl xy:text-5xl text-primary'>

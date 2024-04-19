@@ -6,7 +6,7 @@ const Footer = () => {
 		<footer className="">
 			<div className='flex sd:flex-row xz:flex-col'>
 				<div className='sd:w-1/2 xz:w-full'>
-					<Image src='/contacts.webp' alt='Контакты компании по созданию сайтов' width={1376} height={1080} />
+					<Image src='/fon/fon10.webp' alt='Контакты компании по созданию сайтов' width={1376} height={1080} />
 				</div>
 
 				<aside className='pt-8 sd:pl-12 xz:pl-5 sd:pb-0 xz:pb-10'>
@@ -22,6 +22,26 @@ const Footer = () => {
 								+375 33 351-15-97
 							</a>
 						</div>
+					
+					
+						
+						<div className='mt-6'>
+							<span className="text-primary font-semibold">
+								Наш основной сайт:
+							</span>{' '}
+							<a href='https://vi-tech.by' target='_blank' rel="noreferrer" className='block underline'>
+								vi-tech.by
+							</a>
+						</div>
+						<div className='mt-6 sd:hidden xz:block'>
+							<span className="text-primary font-semibold">
+								Портфолио:
+							</span>{' '}
+							<a href='https://vi-tech.by/portfolio' target='_blank' rel="noreferrer" className='block underline'>
+								vi-tech.by/portfolio
+							</a>
+						</div>
+
 						<div className='mt-6'>
 							<span className="text-primary font-semibold">
 								Адрес:
@@ -30,14 +50,7 @@ const Footer = () => {
 								Минск, ул. К.Туровского, 8
 							</a>
 						</div>
-						<div className='mt-6'>
-							<span className="text-primary font-semibold">
-								Почта:
-							</span>{' '}
-							<p className="">
-								info.contact.vitech@gmail.com
-							</p>
-						</div>
+
 						<div className='mt-6'>
 							<span className="text-primary font-semibold">
 								Режим работы:
@@ -48,19 +61,11 @@ const Footer = () => {
 						</div>
 						<div className='mt-6'>
 							<span className="text-primary font-semibold">
-								Наш основной сайт:
+								Почта:
 							</span>{' '}
-							<a href='https://vi-tech.by' target='_blank' rel="noreferrer" className='block'>
-								vi-tech.by
-							</a>
-						</div>
-						<div className='mt-6'>
-							<span className="text-primary font-semibold">
-								Портфолио:
-							</span>{' '}
-							<a href='https://vi-tech.by/portfolio' target='_blank' rel="noreferrer" className='block'>
-								vi-tech.by/portfolio
-							</a>
+							<p className="">
+								info.contact.vitech@gmail.com
+							</p>
 						</div>
 						<div className='mt-6'>
 							<span className="text-primary font-semibold">

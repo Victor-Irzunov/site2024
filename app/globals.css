@@ -16,7 +16,7 @@
   }
 }
 
-body {
+/* body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
@@ -24,10 +24,28 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+} */
+
+.btn-gradient {
+  background: linear-gradient(
+    92.23deg,
+    #fcb045 21.43%,
+    #fd1d1d 50.63%,
+    #833ab4 100%,
+    #833ab4 117.04%
+  );
+  /* box-shadow: 0px 4.42184px 107.23px rgba(255, 86, 246, 0.51); */
+  /* #833ab4, #fd1d1d, #fcb045 */
 }
+
+.text-shadow {
+  text-shadow: 2px 2px 0 rgba(0,0,0,0.4);
+}
+
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
 }
+
