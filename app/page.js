@@ -46,7 +46,6 @@ export default function Home() {
                 <Image className="" src='/fon/2.webp'
                   width={577} height={433}
                   alt="фоновое изображение - создание сайтов"
-                  loading="lazy"
                 />
               </div>
             </div>
