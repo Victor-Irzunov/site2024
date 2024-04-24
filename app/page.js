@@ -2,6 +2,7 @@
 import Modal from "@/components/modal/Modal";
 import Image from "next/image";
 import { useState } from "react";
+
 export default function Home() {
   const [selectedProduct, setSelectedProduct] = useState(null);
   const [isFormSubmitted, setIsFormSubmitted] = useState(false);
@@ -17,40 +18,63 @@ export default function Home() {
       <div className='relative min-h-screen'>
         <div className='container mx-auto'>
 
-          <section className='flex sd:flex-row xz:flex-col items-center sd:justify-between xz:justify-center h-screen'>
+          <section className="sd:pt-0 xz:pt-10">
 
-            <div className='sd:w-1/2 xz:w-full text-white'>
-              <h1 className='sd:text-7xl xz:text-4xl xx:text-5xl font-bold text-shadow'>
-                Создание сайтов
-              </h1>
-              <h2 className='mt-5 sd:text-3xl xz:text-xl font-light sd:pl-2 xz:pl-1'>
-                Профессиональные сайты здесь
-              </h2>
-              <div className='container mx-auto'>
-                <p className='sd:mt-10 xz:mt-6 font-light sd:pl-2 xz:pl-1 sd:text-justify xz:text-left sd:text-base xz:text-sm'>
-                  Мы специализируемся на создании современных и интуитивно понятных сайтов, способствующих увеличению продаж или получению заказов, и помогающих вашему бизнесу выделиться среди конкурентов. <span className="sd:inline xz:hidden">Наша команда профессиональных разработчиков готова воплотить ваши идеи в жизнь, обеспечивая высокий уровень качества и функциональности.</span>
-                </p>
+            <div className='flex sd:flex-row xz:flex-col items-center sd:justify-between xz:justify-center h-screen' >
+              <div className='sd:w-1/2 xz:w-full text-white'>
+                <h1 className='sd:text-7xl xz:text-4xl xx:text-5xl font-bold text-shadow'>
+                  Создание сайтов
+                </h1>
+                <h2 className='mt-5 sd:text-3xl xz:text-xl font-light sd:pl-2 xz:pl-1'>
+                  Продвижение сайтов в Google и Яндекс
+                </h2>
+                <div className='container mx-auto'>
+                  <p className='sd:mt-10 xz:mt-6 font-light sd:pl-2 xz:pl-1 sd:text-justify xz:text-left sd:text-base xz:text-sm'>
+                    Мы специализируемся на создании современных и интуитивно понятных сайтов, способствующих увеличению продаж или получению заказов, и помогающих вашему бизнесу выделиться среди конкурентов. <span className="sd:inline xz:hidden">Наша команда профессиональных разработчиков готова воплотить ваши идеи в жизнь, обеспечивая высокий уровень качества и функциональности.</span>
+                  </p>
+                </div>
+
+                <button
+                  className="btn btn-primary  border-none shadow-lg sd:btn-md xz:btn-sm rounded-none text-white mt-8 uppercase"
+                  onClick={() => handleOrderClick('Получить консультацию')}
+                >
+                  Получить консультацию
+                </button>
               </div>
 
-              <button
-                className="btn btn-primary  border-none shadow-lg sd:btn-md xz:btn-sm rounded-none text-white mt-8 uppercase"
-                onClick={() => handleOrderClick('Получить консультацию')}
-              >
-                Получить консультацию
-              </button>
+              <div className='sd:w-1/2 xz:w-full flex justify-center items-center overflow-hidden sd:mt-0 xz:mt-10'>
+                <Image className="" src='/fon/2.webp'
+                  width={577} height={433}
+                  alt="фоновое изображение - создание сайтов"
+                  loading="lazy"
+                />
+              </div>
             </div>
 
-            <div className='sd:w-1/2 xz:w-full flex justify-center items-center overflow-hidden sd:mt-0 xz:mt-10'>
-              <img className="mask mask-circle shadow-xl" src="/fon/fon6.webp"
-                // style={{ borderRadius: '56% 44% 70% 30% / 45% 58% 42% 55%' }}
-                alt="фоновое изображение - создание сайтов"
-              />
+            <div className='text-white sd:-mt-16 xz:mt-10 flex sd:flex-row xz:flex-col sd:text-lg xz:text-base'>
+              <p className=''>
+                Наш основной сайт:{' '}
+                <a href="https://vi-tech.by/"
+                  target="_blank"
+                  className="underline font-semibold"
+                >
+                  vi-tech.by  <Image src='/svg/link.svg' className="inline ml-1" alt='Стоимость продвижения' width={20} height={20} />
+                </a>
+              </p>
+              <p className='sd:mt-0 xz:mt-4 sd:ml-5 xz:ml-0'>
+                Работы нашей команды:{' '}
+                <a href="https://vi-tech.by/portfolio"
+                  target="_blank"
+                  className="underline font-semibold"
+                >
+                  Портфолио  <Image src='/svg/link.svg' className="inline ml-1" alt='Стоимость продвижения' width={20} height={20} />
+                </a>
+              </p>
             </div>
-
           </section>
         </div>
       </div>
-      <section className='xz:pb-6 sd:pb-28 pt-10 bg-primary'>
+      <section className='xz:pb-6 sd:pb-28 pt-10 mt-8'>
         <div className='container mx-auto text-center'>
           <h3 className='sd:text-5xl xz:text-3xl uppercase text-white'>
             Цена создания сайта
@@ -60,7 +84,8 @@ export default function Home() {
           </p>
 
           <div className='flex sd:flex-row xz:flex-col py-10 sd:mt-5 xz:mt-0 justify-evenly'>
-            <div className='bg-white sd:p-3 xz:p-3'>
+
+            <div className='bg-white sd:p-3 xz:p-3 shadow-xl'>
               <div className='border-b border-primary h-32'>
                 <div className='px-4'>
                   <h4 className='uppercase font-semibold text-gray-600'>
@@ -95,6 +120,8 @@ export default function Home() {
                 Заказать
               </button>
             </div>
+
+
             <div className='sd:mt-0 xz:mt-2 bg-white sd:p-3 xz:p-3'>
               <div className='border-b border-primary h-32'>
                 <div className='px-4'>
@@ -159,6 +186,17 @@ export default function Home() {
                 Заказать
               </button>
             </div>
+          </div>
+
+          <div className='mt-8 text-left text-white sd:text-lg xz:text-base'>
+            <p className=''>
+              <a href="https://vi-tech.by/prodvizhenie-sajta"
+                target="_blank"
+                className="underline font-semibold"
+              >
+                Стоимость продвижения <Image src='/svg/link.svg' className="inline ml-1" alt='Стоимость продвижения' width={20} height={20} />
+              </a>
+            </p>
           </div>
         </div>
       </section>
