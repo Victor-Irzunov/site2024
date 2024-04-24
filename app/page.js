@@ -23,7 +23,7 @@ export default function Home() {
             <div className='flex sd:flex-row xz:flex-col items-center sd:justify-between xz:justify-center h-screen' >
               <div className='sd:w-1/2 xz:w-full text-white'>
                 <h1 className='sd:text-7xl xz:text-4xl xx:text-5xl font-bold text-shadow'>
-                  Создание сайтов
+                  Создание сайтов в Минске
                 </h1>
                 <h2 className='mt-5 sd:text-3xl xz:text-xl font-light sd:pl-2 xz:pl-1'>
                   Продвижение сайтов в Google и Яндекс
@@ -187,7 +187,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className='mt-8 text-left text-white sd:text-lg xz:text-base'>
+          <div className='xz:mt-4 sd:mt-7 text-left text-white sd:text-lg xz:text-base'>
             <p className=''>
               <a href="https://vi-tech.by/prodvizhenie-sajta"
                 target="_blank"
