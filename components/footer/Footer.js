@@ -3,7 +3,7 @@ import Image from "next/image"
 
 const Footer = () => {
 	return (
-		<footer className="bg-white">
+		<footer className="bg-white sd:bg-[url('/fon/3.webp')] xz:bg-[url('/fon/footer.webp')] bg-cover sd:py-12 xz:py-5">
 			<div className='container mx-auto'>
 
 
@@ -101,10 +101,10 @@ const Footer = () => {
 
 			</div>
 
-			<aside className="pt-3 pb-3">
+			<aside className="xz:pt-3 sd:mt-14 pb-3">
 				<div className='container mx-auto text-center'>
 					<aside className="border-t pt-2">
-						<p className='text-gray-800 xs:text-xs xz:text-[10px] font-light leading-3' >
+						<p className='text-gray-800 xs:text-sm xz:text-[12px] font-light leading-3' >
 
 							Информация на сайте не является публичной офертой и предоставляется исключительно в информационных целях. {' '}
 							Copyright © 2024 | Разработка
