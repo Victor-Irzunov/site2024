@@ -84,7 +84,7 @@ export default function Home() {
 
           <div className='flex sd:flex-row xz:flex-col py-10 sd:mt-5 xz:mt-0 justify-evenly'>
 
-            <div className='bg-white sd:p-3 xz:p-3 shadow-xl'>
+            <div className='bg-white sd:px-3 xz:px-3 py-7 shadow-xl'>
               <div className='border-b border-primary h-32'>
                 <div className='px-4'>
                   <h4 className='uppercase font-semibold text-gray-600'>
@@ -121,7 +121,7 @@ export default function Home() {
             </div>
 
 
-            <div className='sd:mt-0 xz:mt-2 bg-white sd:p-3 xz:p-3'>
+            <div className='sd:mt-0 xz:mt-2 bg-white sd:px-3 xz:px-3 py-7 shadow-xl'>
               <div className='border-b border-primary h-32'>
                 <div className='px-4'>
                   <h4 className='uppercase font-semibold text-gray-600'>
@@ -153,7 +153,7 @@ export default function Home() {
                 Заказать
               </button>
             </div>
-            <div className='sd:mt-0 xz:mt-2 bg-white sd:p-3 xz:p-3'>
+            <div className='sd:mt-0 xz:mt-2 bg-white sd:px-3 xz:px-3 py-7 shadow-xl'>
               <div className='border-b border-primary h-32'>
                 <div className='px-4'>
                   <h4 className='uppercase font-semibold text-gray-600'>
@@ -187,13 +187,14 @@ export default function Home() {
             </div>
           </div>
 
-          <div className='xz:mt-4 sd:mt-7 text-left text-white sd:text-lg xz:text-base'>
+          <div className='xz:mt-4 sd:mt-7 text-left text-white sd:text-xl xz:text-base'>
             <p className=''>
+            Стоимость продвижения сайта от 150 BYN{' '}
               <a href="https://vi-tech.by/prodvizhenie-sajta"
                 target="_blank"
-                className="underline font-semibold"
+                className="underline block"
               >
-                Стоимость продвижения <Image src='/svg/link.svg' className="inline ml-1" alt='Стоимость продвижения' width={20} height={20} />
+               Подробнее <Image src='/svg/link.svg' className="inline ml-1" alt='Стоимость продвижения' width={20} height={20} />
               </a>
             </p>
           </div>
