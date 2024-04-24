@@ -50,7 +50,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className='text-white sd:-mt-16 xz:mt-10 flex sd:flex-row xz:flex-col sd:text-lg xz:text-base'>
+            <div className='text-white sd:-mt-16 xz:mt-4 flex sd:flex-row xz:flex-col sd:text-lg xz:text-base'>
               <p className=''>
                 Наш основной сайт:{' '}
                 <a href="https://vi-tech.by/"
