@@ -17,7 +17,7 @@ const Footer = () => {
 							<span className="text-primary font-semibold block">
 								Телефон
 							</span>{' '}
-							<a href="tel:80333511597">
+							<a href="tel:80333511597" className="font-semibold">
 								+375 33 351-15-97
 							</a>
 						</div>
