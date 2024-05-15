@@ -23,7 +23,7 @@ export default function Home() {
             <div className='flex sd:flex-row xz:flex-col items-center sd:justify-between xz:justify-center h-screen' >
               <div className='sd:w-1/2 xz:w-full text-white'>
                 <h1 className='sd:text-7xl xz:text-4xl xx:text-5xl font-bold text-shadow'>
-                  Создание сайтов в Минске
+                  Создание сайтов в Гродно
                 </h1>
                 <h2 className='mt-5 sd:text-3xl xz:text-xl font-light sd:pl-2 xz:pl-1'>
                   Продвижение сайтов в Google и Яндекс
@@ -73,7 +73,7 @@ export default function Home() {
           </section>
         </div>
       </div>
-      <section className='xz:pb-6 sd:pb-28 pt-10 mt-8'>
+      <section className='xz:pb-12 sd:pb-28 pt-10 mt-8'>
         <div className='container mx-auto text-center'>
           <h3 className='sd:text-5xl xz:text-3xl uppercase text-white'>
             Цена создания сайта
@@ -82,7 +82,7 @@ export default function Home() {
             Создание сайта зависит от нескольких ключевых факторов, включая количество страниц, тип товаров или услуг, а также требования к дизайну и функционалу. От правильного планирования и разработки контента до оптимизации для поисковых систем – каждый этап играет важную роль в создании уникального и эффективного веб-проекта.
           </p>
 
-          <div className='flex sd:flex-row xz:flex-col py-10 sd:mt-5 xz:mt-0 justify-evenly'>
+          <div className='grid sd:grid-cols-3 xz:grid-cols-1 gap-4 justify-center mt-10 mb-5'>
 
             <div className='bg-white sd:px-3 xz:px-3 py-7 shadow-xl'>
               <div className='border-b border-primary h-32'>

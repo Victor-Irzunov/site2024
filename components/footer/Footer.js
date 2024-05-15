@@ -28,7 +28,7 @@ const Footer = () => {
 							<span className="text-primary font-semibold">
 								Наш основной сайт
 							</span>{' '}
-							<a href='https://vi-tech.by' target='_blank' rel="noreferrer" className='block underline'>
+							<a href='https://vi-tech.by' target='_blank' rel="noreferrer" className='block'>
 								vi-tech.by
 							</a>
 						</div>
@@ -36,26 +36,18 @@ const Footer = () => {
 							<span className="text-primary font-semibold">
 								Портфолио
 							</span>{' '}
-							<a href='https://vi-tech.by/portfolio' target='_blank' rel="noreferrer" className='block underline'>
+							<a href='https://vi-tech.by/portfolio' target='_blank' rel="noreferrer" className='block'>
 								vi-tech.by/portfolio
 							</a>
 						</div>
-				
-						<div className=''>
-							<span className="text-primary font-semibold">
-								Контакты
-							</span>{' '}
-							<a href='https://vi-tech.by/kontakty' target='_blank' rel="noreferrer" className='block underline'>
-								vi-tech.by/kontakty
-							</a>
-						</div>
+		
 
 						<div className=''>
 							<span className="text-primary font-semibold block">
-								Адрес:
+								Юр. адрес:
 							</span>{' '}
 							<a href="https://yandex.by/maps/-/CDBHfZYy" target="_blank">
-								Минск, ул. К.Туровского, 8
+								Гродно, ул. Кирова 34
 							</a>
 						</div>
 
