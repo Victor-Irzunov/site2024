@@ -94,7 +94,7 @@ export default function Home() {
                     (сайт-визитка, лендинг)
                   </p>
                   <p className='font-bold mt-3 sd:text-4xl lg:text-6xl xz:text-4xl xy:text-5xl text-primary'>
-                    <span className="">от</span>  299 BYN
+                    <span className="">от</span>  450 BYN
                   </p>
                 </div>
               </div>
@@ -128,7 +128,7 @@ export default function Home() {
                     Многостраничный сайт
                   </h4>
                   <p className='font-bold mt-7 sd:text-4xl lg:text-6xl xz:text-4xl xy:text-5xl text-primary'>
-                    <span className="">от</span>  599 BYN
+                    <span className="">от</span>  750 BYN
                   </p>
                 </div>
               </div>
@@ -189,7 +189,7 @@ export default function Home() {
 
           <div className='xz:mt-4 sd:mt-7 text-left text-white sd:text-xl xz:text-base'>
             <p className=''>
-            Стоимость продвижения сайта от 150 BYN{' '}
+            Стоимость продвижения сайта от 200 BYN{' '}
               <a href="https://vi-tech.by/prodvizhenie-sajta"
                 target="_blank"
                 className="underline block"
