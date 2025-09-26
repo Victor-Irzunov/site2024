@@ -94,7 +94,7 @@ export default function Home() {
                     (сайт-визитка, лендинг)
                   </p>
                   <p className='font-bold mt-3 sd:text-4xl lg:text-6xl xz:text-4xl xy:text-5xl text-primary'>
-                    <span className="">от</span>  450 BYN
+                    <span className="">от</span>  399 BYN
                   </p>
                 </div>
               </div>
@@ -128,7 +128,7 @@ export default function Home() {
                     Многостраничный сайт
                   </h4>
                   <p className='font-bold mt-7 sd:text-4xl lg:text-6xl xz:text-4xl xy:text-5xl text-primary'>
-                    <span className="">от</span>  750 BYN
+                    <span className="">от</span>  699 BYN
                   </p>
                 </div>
               </div>
@@ -160,7 +160,7 @@ export default function Home() {
                     Интернет-магазин
                   </h4>
                   <p className='font-bold mt-7 sd:text-4xl lg:text-6xl xz:text-4xl xy:text-5xl text-primary'>
-                    <span className="">от</span>  1399 BYN
+                    <span className="">от</span>  1299 BYN
                   </p>
                 </div>
               </div>
@@ -189,14 +189,39 @@ export default function Home() {
 
           <div className='xz:mt-4 sd:mt-7 text-left text-white sd:text-xl xz:text-base'>
             <p className=''>
-            Стоимость продвижения сайта от 200 BYN{' '}
+              Стоимость продвижения сайта от 200 BYN{' '}
               <a href="https://vi-tech.by/prodvizhenie-sajta"
                 target="_blank"
                 className="underline block"
               >
-               Подробнее <Image src='/svg/link.svg' className="inline ml-1" alt='Стоимость продвижения' width={20} height={20} />
+                Подробнее <Image src='/svg/link.svg' className="inline ml-1" alt='Стоимость продвижения' width={20} height={20} />
               </a>
             </p>
+          </div>
+
+
+          <div className='container mx-auto mt-12'>
+            <div className='text-center flex flex-col justify-center items-center space-y-6'>
+              <h3 className='sd:text-5xl xz:text-3xl font-semibold uppercase'>
+                Наши отзывы на
+              </h3>
+
+              <div className=''>
+                <Image src='/svg/kufar.svg' alt='Изображение kufar' width={200} height={100} />
+              </div>
+
+
+              <div className=''>
+                <Image src='/img/kufar-otzyvy.webp' alt='Изображение аккаунта на куфар' width={200} height={100} />
+              </div>
+
+              <div className=''>
+                <a href="https://www.kufar.by/item/163730430" target="_blank" className="flex items-center space-x-2 underline text-white/75">
+                  Перейти на куфар для просмотра отзывов
+                  <Image src='/svg/link.svg' alt='Стрелка' width={15} height={15} className="ml-1" />
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </section>
