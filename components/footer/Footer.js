@@ -80,9 +80,7 @@ const Footer = () => {
 								<a href='viber://chat?number=%2B375333511597' target="_blank" className="">
 									<Image src='/svg/viber.svg' className="mx-2" alt='Вайбер для связи' width={30} height={30} />
 								</a>
-								<a href="https://www.instagram.com/webproduct_developer" target="_blank">
-									<Image src='/svg/instagram.svg' className="mx-2" alt='Инстаграмм для связи' width={30} height={30} />
-								</a>
+							
 							</div>
 						</div>
 					</div>
