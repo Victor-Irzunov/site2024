@@ -93,7 +93,7 @@ export default function Home() {
                   <p className='text-sm text-gray-500'>
                     (сайт-визитка, лендинг)
                   </p>
-                  <p className='font-bold mt-3 sd:text-4xl lg:text-6xl xz:text-4xl xy:text-5xl text-primary'>
+                  <p className='font-bold mt-3 text-4xl  text-primary'>
                     <span className="">от</span>  399 BYN
                   </p>
                 </div>
@@ -127,7 +127,7 @@ export default function Home() {
                   <h4 className='uppercase font-semibold text-gray-600'>
                     Многостраничный сайт
                   </h4>
-                  <p className='font-bold mt-7 sd:text-4xl lg:text-6xl xz:text-4xl xy:text-5xl text-primary'>
+                  <p className='font-bold mt-7 text-4xl text-primary'>
                     <span className="">от</span>  699 BYN
                   </p>
                 </div>
@@ -159,7 +159,7 @@ export default function Home() {
                   <h4 className='uppercase font-semibold text-gray-600'>
                     Интернет-магазин
                   </h4>
-                  <p className='font-bold mt-7 sd:text-4xl lg:text-6xl xz:text-4xl xy:text-5xl text-primary'>
+                  <p className='font-bold mt-7 text-4xl  text-primary'>
                     <span className="">от</span>  1299 BYN
                   </p>
                 </div>
